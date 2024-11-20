@@ -20,7 +20,7 @@
 ## Getting Started
 使用 go-easy 快速构建一个新项目:
 ```bash
-# 下载 go-zzz
+# 下载 go-easy
 git clone https://github.com/Guohuixixi/go-easy
 
 # 进入项目目录
