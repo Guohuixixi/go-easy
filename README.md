@@ -18,7 +18,7 @@
 - [Redis](https://github.com/go-redis/redis)
 
 ## Getting Started
-使用 go-zzz 快速构建一个新项目:
+使用 go-easy 快速构建一个新项目:
 ```bash
 # 下载 go-zzz
 git clone https://github.com/Guohuixixi/go-easy
