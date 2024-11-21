@@ -1,29 +1,29 @@
-package bootstrap
+package core
 
 import (
-	"github.com/Guohuixixi/go-easy/bootstrap/internal"
+	"github.com/Guohuixixi/go-easy/core/bootstrap"
+	"github.com/Guohuixixi/go-easy/core/logger"
 	"github.com/gin-gonic/gin"
 	"github.com/redis/go-redis/v9"
 	"github.com/spf13/viper"
-	"go.uber.org/zap"
 	"gorm.io/gorm"
 )
 
 type Application struct {
-	Config *internal.Config
+	Config *bootstrap.Config
 	Viper  *viper.Viper
 	DB     *gorm.DB
 	Redis  redis.Cmdable
-	Logger *zap.Logger
+	Logger logger.Logger
 	Server *gin.Engine
 }
 
 // NewApplication 初始化 Application
-func NewApplication(config *internal.Config,
+func NewApplication(config *bootstrap.Config,
 	viper *viper.Viper,
 	db *gorm.DB,
 	redis redis.Cmdable,
-	logger *zap.Logger,
+	logger logger.Logger,
 	server *gin.Engine) Application {
 	return Application{
 		Config: config,

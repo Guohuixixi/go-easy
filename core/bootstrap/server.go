@@ -1,4 +1,4 @@
-package internal
+package bootstrap
 
 import "github.com/gin-gonic/gin"
 
@@ -7,7 +7,7 @@ type ServerConfig struct {
 	Port int    `mapstructure:"port" json:"port" yaml:"port"`
 }
 
-func NewServer(config *Config) *gin.Engine {
+func NewServer() *gin.Engine {
 	server := gin.Default()
 	return server
 }
