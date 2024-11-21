@@ -3,6 +3,7 @@ package wire
 import (
 	"github.com/Guohuixixi/go-easy/core"
 	"github.com/Guohuixixi/go-easy/core/bootstrap"
+	"github.com/Guohuixixi/go-easy/core/logger"
 	"github.com/google/wire"
 )
 
@@ -12,6 +13,7 @@ var BaseProvider = wire.NewSet(
 	bootstrap.NewMysql,
 	bootstrap.NewRedis,
 	bootstrap.NewZap,
+	logger.NewZapLogger,
 	core.NewApplication,
 )
 
