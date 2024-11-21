@@ -1,8 +1,8 @@
 package wire
 
 import (
-	"github.com/Guohuixixi/go-easy/bootstrap"
 	"github.com/Guohuixixi/go-easy/bootstrap/internal"
+	"github.com/Guohuixixi/go-easy/core"
 	"github.com/google/wire"
 )
 
@@ -12,7 +12,7 @@ var BaseProvider = wire.NewSet(
 	internal.NewMysql,
 	internal.NewRedis,
 	internal.NewZap,
-	bootstrap.NewApplication,
+	core.NewApplication,
 )
 
 var WebProvider = wire.NewSet(
