@@ -1,14 +1,14 @@
 [server]
 host ="127.0.0.1"
-post = 8088
+port = 8088
 
 [mysql]
 hostname = "localhost"
 config = "charset=utf8mb4&parseTime=True&loc=Local"
-port = 13306
+port = 13316
 username = "root"
-password = "123456"
-database = "go-easy-db"
+password = "root"
+database = "goeasydb"
 
 [redis]
 host = "127.0.0.1"
